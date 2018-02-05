@@ -1,8 +1,8 @@
 # Golang Microservice Gateway
 
-## Technologies Utilized: Iris(Golang MVC Framework), Kafka(Distributed Messaging Framework), HAProxy(Load Balancing), GraphQL(Provides a Graph Data Querying in place of traditional REST)
+#### Technologies Utilized: Iris(Golang MVC Framework), Kafka(Distributed Messaging Framework), HAProxy(Load Balancing), GraphQL(Provides a Graph Data Querying in place of traditional REST)
 
-## Future Technology Considerations: Prometheus(For Request Auditing/Monitoring), Graphana(Visualize Prometheus Events), MongoDB(Storage for various Microservices), Redis(Storage for JWTs), SOME JavaScript Framework(Applicable Frontend for Testing), Apache Ignite/Nginx/Varnish(For Delivering JavaScript Frontend with minimized latency), Rancher/Kubernetes/Mesos(A container orchtestration service to provide autoscaling and autorestart for service uptime)
+#### Future Technology Considerations: Prometheus(For Request Auditing/Monitoring), Graphana(Visualize Prometheus Events), MongoDB(Storage for various Microservices), Redis(Storage for JWTs), SOME JavaScript Framework(Applicable Frontend for Testing), Apache Ignite/Nginx/Varnish(For Delivering JavaScript Frontend with minimized latency), Rancher/Kubernetes/Mesos(A container orchtestration service to provide autoscaling and autorestart for service uptime)
 
 ## Diagram
 
