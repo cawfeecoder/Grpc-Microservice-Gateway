@@ -1,0 +1,22 @@
+//protoc --go_out=plugins=grpc . gateway.proto
+
+syntax = "proto3";
+
+package GatewayProto;
+
+//Send a request to the ServiceRegistry within the Microservice Gateway
+message SvcReq {
+  string serviceName = 1; //Provide the name of the service we are registering. This is the same as the Consul service name.
+  string serviceConsulAddr = 2; //Provide the address of the Consul service providing loading balancing for this cluster of microservices
+  string action = 3; //Actions: Register, Remove, Maintence
+}
+
+//Respond to the request
+message SvcResp {
+  int32 statusCode = 1; //Traditional HTTP Status Codes: 200, 404, 400, 500, ETC.
+  string message = 2; //If an error occurs, we'll put it here
+}
+
+service MicroserviceGatewayRegistry {
+  rpc Send(SvcReq) returns (SvcResp) {}
+}
